@@ -56,6 +56,8 @@ export default class PostPreview extends React.Component {
               </div>
             </div>
 
+            <a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             <div className="tc">
               <a href="{{.buttonLink}}" className="btn raise">Read more</a>
             </div>
