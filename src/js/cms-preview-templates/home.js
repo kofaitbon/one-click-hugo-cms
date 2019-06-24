@@ -2,6 +2,7 @@ import React from "react";
 import format from "date-fns/format";
 
 import Jumbotron from "./components/jumbotron";
+import { TwitterTimeline } from 'react-twitter-embedded-timeline';
 
 export default class PostPreview extends React.Component {
   render() {
@@ -53,8 +54,6 @@ export default class PostPreview extends React.Component {
 
               <div className="w-60-l ph2-l">
                 <img src="/img/home-about-section.jpg" alt="" className="mb3"/>
-                <a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
               </div>
             </div>
 
@@ -62,6 +61,8 @@ export default class PostPreview extends React.Component {
             <div className="tc">
               <a href="{{.buttonLink}}" className="btn raise">Read more</a>
             </div>
+
+              <TwitterTimeline widgetId="695868534455275520" />
 
           </div>
         </div>
